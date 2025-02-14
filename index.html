@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
@@ -12,116 +11,199 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./Assets/nike vector.jpg">
     <title>Nike. Just do it. Nike ES</title>
-
 </head>
 <body>
 
     <header>
-        <a href="https://www.nike.com/es/" title="Just do it" class="logo"><img src="./Assets/Logo_NIKE.png" alt="Nike logo" width="60px"></a>
+        <a href="https://www.nike.com/es/" title="Just do it" class="logo">
+            <img src="./Assets/Logo_NIKE.png" alt="Nike logo" width="60px">
+        </a>
 
-        <div class="secciones">
-            <a href="https://www.nike.com/es/w/nuevo-3n82y"  class="tituloSeccion"><h3>Novedades y destacados</h3></a>
-            <a href="https://www.nike.com/es/hombre" class="tituloSeccion"><h3 >Hombre</h3></a>
-            <a href="https://www.nike.com/es/mujer" class="tituloSeccion"><h3>Mujer</h3></a>
-            <a href="https://www.nike.com/es/ninos" class="tituloSeccion"><h3>Niño/a</h3></a>
-            <a href="https://www.nike.com/es/w/ofertas-3yaep" class="tituloSeccion"><h3>Ofertas</h3></a>
-        </div>
+        <!-- Implementacion del tag nav, me deshago de las tags <h3> -->
+        <nav class="header-nav">
+            <a href="https://www.nike.com/es/w/nuevo-3n82y" class="tituloSeccion" style="font-size: 20px">Novedades y destacados</a>
+            <a href="https://www.nike.com/es/hombre" class="tituloSeccion" style="font-size: 20px">Hombre</a>
+            <a href="https://www.nike.com/es/mujer" class="tituloSeccion" style="font-size: 20px">Mujer</a>
+            <a href="https://www.nike.com/es/ninos" class="tituloSeccion" style="font-size: 20px">Niño/a</a>
+            <a href="https://www.nike.com/es/w/ofertas-3yaep" class="tituloSeccion" style="font-size: 20px">Ofertas</a>
+        </nav>
+
         <div class="iconos">
-            <form action="" method="get" class="barraBusqueda">
-                <input type="search" name="searchBar" id="searchBar" placeholder="    Buscar">
-            </form>
+            <input type="search" name="searchBar" id="searchBar" placeholder="Buscar">
             <a href="" title="Favoritos"><img class="iconoHeart" src="./Assets/white-heart.png" alt="Corazon" width="25px"></a>
             <a href=""><img class="iconoBag" src="./Assets/bag.png" alt="Cesta" title="Productos de la cesta" width="25px"></a>
-            <a href=""><img class="menu" src="./Assets/pngegg.png" alt=""></a>
+            <a href=""><img class="menu" src="./Assets/pngegg.png" alt="Menú"></a>
         </div>
-        
     </header>
 
+    <!-- Separación de cada una de las secciones con las tags adecuadas -->
     <main>
-        <div class="novedad">
+        <section class="novedad">
             <a href="https://www.nike.com/es/w/mujer-sujetadores-deportivos-40qgmz5e1x6">
                 <div class="videoContainer">
                     <video class="videoBra" src="./Assets/nike bras.mp4" muted autoplay loop></video>
                 </div>
+                <!-- Mejora del titulo con las etiquetas adecuadas para hacer la cadena de texto -->
                 <h3>Sujetadores Nike</h3>
-                <h1>GANAR</h1><h1>TE SIENTA BIEN</h1>
-                <h3>La comodidad que quieres con la sujeción que necesitas para sumar más victorias</h3>
+                <h1 class="hero-title"><span>GANAR</span> TE SIENTA BIEN</h1>
+                <p>La comodidad que quieres con la sujeción que necesitas para sumar más victorias</p>
                 <div class="botonesBras">
-                    <a href="https://www.nike.com/es/w/mujer-sujetadores-deportivos-40qgmz5e1x6"><button>Comprar para mujer</button></a>
-                    <a href="https://www.nike.com/es/w/teens-bras-and-leggings-7ihry"><button>Comprar para adolescente</button></a>
+                    <button onclick="window.location.href='https://www.nike.com/es/w/mujer-sujetadores-deportivos-40qgmz5e1x6'">Comprar para mujer</button>
+                    <button onclick="window.location.href='https://www.nike.com/es/w/teens-bras-and-leggings-7ihry'">Comprar para adolescente</button>
                 </div>
-
             </a>
-        </div>
-    
+        </section>
+
         <h1>Lo mejor y más nuevo</h1>
-        <div class="mejores seccion">
-            <a href="https://www.nike.com/es/w/gimnasio-58jto"><img src="./Assets/gym equipo.png" alt="Zapato con chica estirando"><h2>Equipación de gimnasio para el nuevo año</h2></a>
-            <a href="https://www.nike.com/es/w/retro-sneaker-collection-a3dox"><img src="./Assets/shox r4.png" alt="Zapatilla shox r4 blanca"><h2>Novedad:Shox R4</h2></a>
-            <a href="https://www.nike.com/es/w/futbol-zapatillas-1gdj0zy7ok"><img src="./Assets/mad energy.png" alt="Zapatillas de futbol"><h2>Mad Energy Pack</h2></a>
-            <a href="https://www.nike.com/es/w/nike-tech-5e1x6z7lrxuznik1"><img src="./Assets/chandal nike.png" alt="Chandals azules"><h2>Chándal Nike Tech Woven</h2></a>
-            <a href="https://www.nike.com/es/w/running-ropa-37v7jz6ymx6"><img src="./Assets/running.png" alt="Mujer runner"><h2>Ropa de running</h2></a>
-        </div>
-    
+        <section class="mejores seccion">
+            <a href="https://www.nike.com/es/w/gimnasio-58jto">
+                <img src="./Assets/gym equipo.png" alt="Zapato con chica estirando">
+                <h2>Equipación de gimnasio para el nuevo año</h2>
+            </a>
+            <a href="https://www.nike.com/es/w/retro-sneaker-collection-a3dox">
+                <img src="./Assets/shox r4.png" alt="Zapatilla shox r4 blanca">
+                <h2>Novedad:Shox R4</h2>
+            </a>
+            <a href="https://www.nike.com/es/w/futbol-zapatillas-1gdj0zy7ok">
+                <img src="./Assets/mad energy.png" alt="Zapatillas de futbol">
+                <h2>Mad Energy Pack</h2>
+            </a>
+            <a href="https://www.nike.com/es/w/nike-tech-5e1x6z7lrxuznik1">
+                <img src="./Assets/chandal nike.png" alt="Chandals azules">
+                <h2>Chándal Nike Tech Woven</h2>
+            </a>
+            <a href="https://www.nike.com/es/w/running-ropa-37v7jz6ymx6">
+                <img src="./Assets/running.png" alt="Mujer runner">
+                <h2>Ropa de running</h2>
+            </a>
+        </section>
+
         <h1>Consigue nuestros iconos</h1>
-        <div class="zapatillas seccion">
-            <a href="https://www.nike.com/es/w/air-max-zapatillas-a6d8hzy7ok"><img src="./Assets/air max.jpg" alt="Air max negra"><button>Air Max</button></a>
-            <a href="https://www.nike.com/es/w/retro-sneaker-collection-a3dox"><img src="./Assets/y2k.jpg" alt="Y2k Silver"><button>Y2K</button></a>
-            <a href="https://www.nike.com/es/w/air-force-1-lifestyle-zapatillas-13jrmz5sj3yzy7ok"><img src="./Assets/air force 1.jpg" alt="Air force 1 gris"><button>Air Force 1</button></a>
-            <a href="https://www.nike.com/es/w/dunk-lifestyle-zapatillas-13jrmz90aohzy7ok"><img src="./Assets/dunk.jpg" alt="Dunk blanca"><button>Dunk</button></a>
-            <a href="https://www.nike.com/es/w/jordan-zapatillas-37eefzy7ok"><img src="./Assets/air jordan.jpg" alt="Air Jordan gris y blanca"><button>Air Jordan</button></a>
-        </div>
+        <section class="zapatillas seccion">
+            <a href="https://www.nike.com/es/w/air-max-zapatillas-a6d8hzy7ok">
+                <img src="./Assets/air max.jpg" alt="Air max negra">
+                <button>Air Max</button>
+            </a>
+            <a href="https://www.nike.com/es/w/retro-sneaker-collection-a3dox">
+                <img src="./Assets/y2k.jpg" alt="Y2k Silver">
+                <button>Y2K</button>
+            </a>
+            <a href="https://www.nike.com/es/w/air-force-1-lifestyle-zapatillas-13jrmz5sj3yzy7ok">
+                <img src="./Assets/air force 1.jpg" alt="Air force 1 gris">
+                <button>Air Force 1</button>
+            </a>
+            <a href="https://www.nike.com/es/w/dunk-lifestyle-zapatillas-13jrmz90aohzy7ok">
+                <img src="./Assets/dunk.jpg" alt="Dunk blanca">
+                <button>Dunk</button>
+            </a>
+            <a href="https://www.nike.com/es/w/jordan-zapatillas-37eefzy7ok">
+                <img src="./Assets/air jordan.jpg" alt="Air Jordan gris y blanca">
+                <button>Air Jordan</button>
+            </a>
+        </section>
 
         <h1>Descubrir más</h1>
-        <div class="descubrir seccion">
-            <a href="https://www.nike.com/es/mujer"><img src="./Assets/nike mujer chaqueta verde.jpg" alt="Chica andando"><button>Mujer</button></a>
-            <a href="https://www.nike.com/es/hombre"><img src="./Assets/chico andando.jpg" alt="Chico andando"><button>Hombre</button></a>
-            <a href="https://www.nike.com/es/ninos"><img src="./Assets/niños corriendo.jpg" alt="Niños corriendo"><button>Niño/a</button></a>
-            <a href="https://www.nike.com/es/adolescentes"><img src="./Assets/chica bailando.jpg" alt="Niña Bailando"><button>Adolescente</button></a>
-        </div>
+        <section class="descubrir seccion">
+            <a href="https://www.nike.com/es/mujer">
+                <img src="./Assets/nike mujer chaqueta verde.jpg" alt="Chica andando">
+                <button>Mujer</button>
+            </a>
+            <a href="https://www.nike.com/es/hombre">
+                <img src="./Assets/chico andando.jpg" alt="Chico andando">
+                <button>Hombre</button>
+            </a>
+            <a href="https://www.nike.com/es/ninos">
+                <img src="./Assets/niños corriendo.jpg" alt="Niños corriendo">
+                <button>Niño/a</button>
+            </a>
+            <a href="https://www.nike.com/es/adolescentes">
+                <img src="./Assets/chica bailando.jpg" alt="Niña Bailando">
+                <button>Adolescente</button>
+            </a>
+        </section>
 
         <h1>Nike Membership</h1>
-        <div class="members seccion">
-            <a href="https://www.nike.com/es/inscripcion/producto-para-members"><img src="./Assets/mujer cajas.png" alt="Mujer y cajas de zapatos cayendo"><h3>Productos para Members</h3><h2>Tu acceso exclusivo</h2><button>Comprar</button></a>
-            <a href="https://www.nike.com/es/inscripcion/recompensas-para-members"><img src="./Assets/mujer telefono.jpg" alt="Mujer enseñando su teléfono"><h3>Recompensas para Members</h3><h2>Cómo te damos las gracias</h2><button>Celébralo</button></a>
-            <a href="https://www.nike.com/es/inscripcion/aplicaciones-de-deporte-y-bienestar"><img src="./Assets/chicas abrazandose.jpg" alt="chicas abrazandose"><h3>Deporte y bienestar</h3><h2>Muévete como quieras</h2><button>Muévete</button></a>
-            <a href="https://www.nike.com/es/inscripcion/aplicaciones-de-deporte-y-bienestar"><img src="./Assets/chica con zapato.png" alt="Mujer sujetando un zapato"><h3>Nike By You</h3><h2>Tu servicio de personalización</h2><button>Personalizar</button></a>
-            <a href="https://nike.sng.link/Astn5/aetx/gj6r"><img src="./Assets/gente fiersta.jpg" alt="Gente pasándolo bien"><h3>Aplicaciones Nike</h3><h2>Sé tu mejor versión</h2><button>Nike App</button><button>SNKRS App</button></a>
-            <a href="https://www.nike.com/es/inscripcion"><img src="./Assets/gente posando.png" alt="Grupo de gente posando"><h2>Aprovecha más tu Membership</h2><button>Descubrir</button></a>
-        </div>
-
+        <section class="members seccion">
+            <a href="https://www.nike.com/es/inscripcion/producto-para-members">
+                <img src="./Assets/mujer cajas.png" alt="Mujer y cajas de zapatos cayendo">
+                <h3>Productos para Members</h3>
+                <h2>Tu acceso exclusivo</h2>
+                <button>Comprar</button>
+            </a>
+            <a href="https://www.nike.com/es/inscripcion/recompensas-para-members">
+                <img src="./Assets/mujer telefono.jpg" alt="Mujer enseñando su teléfono">
+                <h3>Recompensas para Members</h3>
+                <h2>Cómo te damos las gracias</h2>
+                <button>Celébralo</button>
+            </a>
+            <a href="https://www.nike.com/es/inscripcion/aplicaciones-de-deporte-y-bienestar">
+                <img src="./Assets/chicas abrazandose.jpg" alt="Chicas abrazandose">
+                <h3>Deporte y bienestar</h3>
+                <h2>Muévete como quieras</h2>
+                <button>Muévete</button>
+            </a>
+            <a href="https://www.nike.com/es/inscripcion/aplicaciones-de-deporte-y-bienestar">
+                <img src="./Assets/chica con zapato.png" alt="Mujer sujetando un zapato">
+                <h3>Nike By You</h3>
+                <h2>Tu servicio de personalización</h2>
+                <button>Personalizar</button>
+            </a>
+            <a href="https://nike.sng.link/Astn5/aetx/gj6r">
+                <img src="./Assets/gente fiersta.jpg" alt="Gente pasándola bien">
+                <h3>Aplicaciones Nike</h3>
+                <h2>Sé tu mejor versión</h2>
+                <button>Nike App</button>
+                <button>SNKRS App</button>
+            </a>
+            <a href="https://www.nike.com/es/inscripcion">
+                <img src="./Assets/gente posando.png" alt="Grupo de gente posando">
+                <h2>Aprovecha más tu Membership</h2>
+                <button>Descubrir</button>
+            </a>
+        </section>
     </main>
 
     <footer>
-        <ul>
+       <!--  Utilizo un nav tambien para el footer y tambien separamos por secciones -->
+        <nav class="footer-nav">
+        <section>
             <h2>Zapatillas</h2>
-            <li><a href="https://www.nike.com/es/w/negro-running-zapatillas-37v7jz90poyzy7ok">Zapatillas de running en negro</a></li>
-            <li><a href="https://www.nike.com/es/w/blanco-running-zapatillas-37v7jz4g797zy7ok">Zapatillas de running en blanco</a></li>
-            <li><a href="https://www.nike.com/es/w/zapatillas-y7ok">Zapatillas Nike P-6000</a></li>
-            <li><a href="https://www.nike.com/es/w/nike-initiator-7ji49">Nike Initiator</a></li>
-        </ul>
+            <ul>
+                <li><a href="https://www.nike.com/es/w/negro-running-zapatillas-37v7jz90poyzy7ok">Zapatillas de running en negro</a></li>
+                <li><a href="https://www.nike.com/es/w/blanco-running-zapatillas-37v7jz4g797zy7ok">Zapatillas de running en blanco</a></li>
+                <li><a href="https://www.nike.com/es/w/zapatillas-y7ok">Zapatillas Nike P-6000</a></li>
+                <li><a href="https://www.nike.com/es/w/nike-initiator-7ji49">Nike Initiator</a></li>
+            </ul>
+        </section>
 
-        <ul>
+        <section>
             <h2>Ropa</h2>
-            <li><a href="https://www.nike.com/es/w/yoga-pantalones-y-mallas-2kq19zanrlj">Pantalones de yoga</a></li>
-            <li><a href="https://www.nike.com/es/w/tech-fleece-pantalones-chandal-6sipkzaepf0">Joggers Tech Fleece</a></li>
-            <li><a href="https://www.nike.com/es/w/tech-fleece-ropa-6sipkz6ymx6">Tech Fleece</a></li>
-        </ul>
+            <ul>
+                <li><a href="https://www.nike.com/es/w/yoga-pantalones-y-mallas-2kq19zanrlj">Pantalones de yoga</a></li>
+                <li><a href="https://www.nike.com/es/w/tech-fleece-pantalones-chandal-6sipkzaepf0">Joggers Tech Fleece</a></li>
+                <li><a href="https://www.nike.com/es/w/tech-fleece-ropa-6sipkz6ymx6">Tech Fleece</a></li>
+            </ul>
+        </section>
 
-        <ul>
+        <section>
             <h2>Niño/a</h2>
-            <li><a href="https://www.nike.com/es/w/para-nina-negro-zapatillas-3aqegz90poyzy7ok">Zapatillas negras para niño</a></li>
-            <li><a href="https://www.nike.com/es/w/ninos-negro-zapatillas-90poyzv4dhzy7ok">Zapatillas negras para niña</a></li>
-        </ul>
+            <ul>
+                <li><a href="https://www.nike.com/es/w/para-nina-negro-zapatillas-3aqegz90poyzy7ok">Zapatillas negras para niño</a></li>
+                <li><a href="https://www.nike.com/es/w/ninos-negro-zapatillas-90poyzv4dhzy7ok">Zapatillas negras para niña</a></li>
+            </ul>
+        </section>
 
-        <ul>
-            <h2>Destacados</a></h2>
-            <li><a href="https://www.nike.com/es/w/football-clubs-6fu9q">Equipos de fútbol</a></li>
-            <li><a href="https://www.nike.com/es/w/futbol-1gdj0">Fútbol</a></li>
-            <li><a href="https://www.nike.com/es/w/inglaterra-8p57d">Nike Inglaterra</a></li>
-            <li><a href="https://www.nike.com/es/nrc-app">Nike Run Club</a></li>
-        </ul>
+        <section>
+            <h2>Destacados</h2>
+            <ul>
+                <li><a href="https://www.nike.com/es/w/football-clubs-6fu9q">Equipos de fútbol</a></li>
+                <li><a href="https://www.nike.com/es/w/futbol-1gdj0">Fútbol</a></li>
+                <li><a href="https://www.nike.com/es/w/inglaterra-8p57d">Nike Inglaterra</a></li>
+                <li><a href="https://www.nike.com/es/nrc-app">Nike Run Club</a></li>
+            </ul>
+        </section>
+        </nav>
     </footer>
-    
+
 </body>
 </html>
