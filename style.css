@@ -1,4 +1,4 @@
-/* Aqui he intentado agrupar todos lo valores que se repetian en variables */
+/* Aqui he intentado agrupar todos los valores que se repetian en variables */
 :root {
     --primary-color: black;
     --secondary-color: white;
@@ -102,7 +102,7 @@ input {
     .menu {
         display: block;
     }
-    header > nav {
+    header > .header-nav {
         display: none;
     }
 }
@@ -115,25 +115,20 @@ input {
 
 .videoBra {
     width: 100%;
+    height: 100%;
     height: auto;
 }
+
 
 .novedad {
     text-align: center;
     min-width: 600px;
 }
 
-.hero-title{
-    font-size: clamp(40px, 8vw, 100px);
+.tituloNovedad{
+    font-size: 80px;
     position: relative;
-    margin-top: 130px;
-    left: -240px;
-}
-
-.hero-title > span {
-    position: relative;
-    top: -120px;
-    right: -520px;
+    text-align: center;
 }
 
 .botonesBras {
@@ -150,7 +145,7 @@ input {
     width: 200px;
     height: 40px;
     border-radius: var(--default-border-radius);
-    font-size: clamp(12px, 1.2vw, 15px);
+    font-size: 15px;
     cursor: pointer;
 }
 
@@ -163,14 +158,26 @@ main h1 {
     margin-left: 5%;
 }
 
+/* He intentado que lo que habia conseguido con flex se mantuviera con Grid, y ahora en cuanto el tamño de la pantalla baja de
+1000px, pasan a estar los elementos en una sola columna */
 .seccion {
     margin: var(--default-margin) 5%;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 600px;
     overflow: hidden;
-    flex: 1 0 auto;
-    min-width: 600px;
-    gap: 10px;
+    white-space: nowrap;
+    grid-column-gap: 10px;
 }
+
+@media (max-width: 1000px) {
+    .seccion {
+      grid-auto-flow: row;
+      min-width: 570px;
+      justify-content: center;
+      
+    }
+  }
 
 .seccion:hover {
     overflow-x: scroll;
@@ -181,7 +188,7 @@ main h1 {
 }
 
 .zapatillas a {
-    margin-right: -65px;
+    margin-right: -650px;
     min-width: 600px;
 }
 
@@ -192,8 +199,8 @@ main h1 {
 
 .zapatillas > a > button {
     position: relative;
-    top: -90px;
-    left: 45px;
+    top: -50px;
+    left: -500px;
     width: 120px;
     height: 40px;
     border-radius: var(--default-border-radius);
@@ -213,8 +220,8 @@ main h1 {
 
 .descubrir > a > button {
     position: relative;
-    top: -90px;
-    left: 45px;
+    top: -60px;
+    left: -500px;
     width: 120px;
     height: 40px;
     border-radius: var(--default-border-radius);
@@ -303,3 +310,4 @@ footer ul li a {
 footer ul li a:hover {
     color: var(--primary-color);
 }
+
